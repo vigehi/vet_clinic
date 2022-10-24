@@ -1,9 +1,9 @@
 
-![](https://img.shields.io/static/v1?label=BY&message=edithoga&color=pink)
+![](https://img.shields.io/static/v1?label=BY&message=edithoga&color=blue)
 
 ## Vet Clinic 
 
-> The project contain database created using a relational database. to store the information for clinic, so you can store the information for all the animals that come and treat in this clinic and the visits, the specializations and the vets there. 🦮😾🐴👩🏻‍⚕️
+> The project contain database created using a relational database. to store the information for clinic, so you can store the information for all the animals that come and treat in this clinic and the visits, the specializations and the vets there. 
 
 ## Getting Started
 

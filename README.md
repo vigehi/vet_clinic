@@ -36,6 +36,16 @@ CREATE DATABASE vet-clinic;
 - Use [data.sql](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
 
+## Screnshots
+
+![Find all animals whose name ends in "mon".](/images/mon.png)
+![List the name of all animals born between 2016 and 2019.](/images/dob.png)
+![List the name of all animals that are neutered and have less than 3 escape attempts.](/images/att.png)
+![List the date of birth of all animals named either "Agumon" or "Pikachu".](/images/two.png)
+![List name and escape attempts of animals that weigh more than 10.5kg.](/images/kg.png)
+![Find all animals that are neutered.](/images/true.png)
+![Find all animals not named Gabumon.](/images/gabu.png)
+![Find all animals with a weight between 10.4kg and 17.3kg (including the animals with the weights that equals precisely 10.4kg or 17.3kg)](/images/last.png)
 
 ## Authors
 

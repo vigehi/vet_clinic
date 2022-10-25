@@ -1,5 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
+CREATE DATABASE vet_clinic;
+
 CREATE TABLE animals (
 id INT GENERATED ALWAYS AS IDENTITY,
 name varchar(100), 
@@ -9,3 +11,5 @@ neutered boolean,
 weight_kg decimal,
 PRIMARY KEY(id)
 );
+
+Alter table animals  add column species Varchar(100);

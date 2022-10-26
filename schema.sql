@@ -40,3 +40,22 @@ UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR name = 'Pikachu';
 UPDATE animals SET owner_id = 3 WHERE name = 'Devimon' OR name = 'Plantmon';
 UPDATE animals SET owner_id = 4 WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
 UPDATE animals SET owner_id = 5 WHERE name = 'Angemon' OR name = 'Boarmon';
+
+CREATE TABLE vets   (
+id INT GENERATED ALWAYS AS IDENTITY,
+name varchar(100),
+age INT,
+date_of_graduation date,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE specialization (
+    vet_id integer references vets(id),
+    species_id integer references species(id)
+    );
+
+CREATE TABLE visits (
+    animals_id integer references animals(id) ,
+    vets_id integer references vets(id) ,
+    data_of_visit date
+);

@@ -1,0 +1,61 @@
+//// -- LEVEL 1
+//// -- Tables and References
+
+// Creating tables
+
+
+table animals {
+id int [pk, increment]
+name varchar(100)
+date_of_birth date
+escape_attempts INT
+neutered boolean
+weight_kg decimal
+species_id int
+owner_id int
+}
+
+table owners {
+id int [pk, increment]
+full_name varchar(100)
+age int
+}
+
+table species  {
+id int [pk, increment]
+name varchar(100)
+}
+
+table vets  {
+id int [pk, increment]
+name varchar(100)
+age int
+date_of_graduation date
+}
+
+table specialization {
+    vet_id int 
+    species_id int
+}
+
+table visits {
+    animals_id int
+    vets_id int
+    data_of_visit varchar(50)
+}
+
+
+
+
+
+Ref: "owners"."id" < "animals"."owner_id"
+
+Ref: "species"."id" < "animals"."species_id"
+
+Ref: "specialization"."species_id" > "species"."id"
+
+Ref: "vets"."id" < "specialization"."vet_id"
+
+Ref: "animals"."id" < "visits"."animals_id"
+
+Ref: "vets"."id" < "visits"."vets_id"

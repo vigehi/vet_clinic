@@ -5,6 +5,10 @@
 
 > The project contain database created using a relational database. to store the information for clinic, so you can store the information for all the animals that come and treat in this clinic and the visits, the specializations and the vets there. 
 
+## Schema Diagram
+
+Click [this link](https://dbdiagram.io/d/63636961c9abfc61116ffebb) to see the scheme diagram for this project. Hover over the lines or the row to get info on the relations with other tables
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
